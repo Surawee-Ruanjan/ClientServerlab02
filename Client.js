@@ -7,7 +7,7 @@ var i=0
 var client = new net.Socket();
 client.connect(PORT, HOST, function() {
    console.log('CONNECTED TO: ' + HOST + ':' + PORT);
-   client.write('5735512153');
+   client.write('5935512033');
 });
 
 client.on('data', function(data) {
@@ -35,7 +35,7 @@ client.on('data', function(data) {
     client.destroy();
     client.connect(PORT, HOST, function() {
         console.log('CONNECTED TO: ' + HOST + ':' + PORT);
-        client.write('5735512153');
+        client.write('5935512033');
      });
   }
   
